@@ -71,6 +71,8 @@ Sistema operativo
 
 
 ## DNS público
+![DNS Público](./img/dnsPublic0.png  "DNS Público")
+Note:
 Empresa | IP Servidor DNS primario | IP Servidor DNS secundario
 -- | -- | --
 Google |	8.8.8.8 |	8.8.4.4
