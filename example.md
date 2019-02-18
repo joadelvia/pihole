@@ -44,8 +44,7 @@ Sistema operativo
 - ....
 
 
-
-# Otras opciones
+## Otras opciones
 - [Contenedor Docker](https://hub.docker.com/r/pihole/pihole/)
 - Máquina virtual
 	- [Descarga](https://www.osboxes.org/raspbian/) 
@@ -69,3 +68,58 @@ Sistema operativo
 
 ## Funcionamiento DNS
 ![Funcionamiento DNS](./img/EsquemaBasicoDNS.jpg  "Funcionamiento DNS")
+
+
+## DNS público
+Empresa | IP Servidor DNS primario | IP Servidor DNS secundario
+-- | -- | --
+Google |	8.8.8.8 |	8.8.4.4
+OpenDNS |	208.67.222.222|	208.67.220.220
+Norton ConnectSafe|	198.153.192.40|	198.153.194.40
+Comodo Secure DNS|	8.26.56.26	|156.154.70.22
+OpenNIC	|202.83.95.227|	216.87.84.211
+Level 3 Communications|	4.2.2.1|	4.2.2.2
+Dyn Internet Guide	|216.146.35.35	|216.146.36.36
+Verisign	|64.6.64.6	|64.6.65.6
+Telefónica|	80.58.61.250|	80.58.61.254
+Jazztel	|87.216.1.65	|87.216.1.66
+Orange	|62.36.225.150|	62.37.228.20
+
+
+
+# Instalación
+
+
+## Crear máquina virtual
+### Configuración básica
+
+
+## Instalar Pi-Hole
+	curl -sSL https://install.pi-hole.net | bash
+	
+
+## Cambiar contraseña de admin
+	pihole -a -p
+	
+	
+## Reconfiguración
+	pihole -r
+
+
+## Acceder al panel de administración
+	http://ip/admin
+![Dashboard](./img/dashboard.png) 
+
+
+## Configuración de los clientes
+
+
+## Actualización
+	pihole -up
+
+
+## [VPN](https://hefistion.github.io/Pi-Hole-Bloquea-la-publicidad-desde-raspberry-pi/) 
+
+
+
+# Muchas gracias
